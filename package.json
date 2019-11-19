@@ -1,0 +1,26 @@
+{
+  "name": "remove-flow-types",
+  "version": "1.0.0",
+  "description": "Remove flow types",
+  "main": "scripts.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d7my11/remove-flow-types"
+  },
+  "author": "d7my",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d7my11/remove-flow-types/issues"
+  },
+  "homepage": "https://github.com/d7my11/remove-flow-types#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
