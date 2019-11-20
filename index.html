@@ -8,6 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
+      .navbar .navbar-link-group .navbar-link {
+        color: #f8f9fa;
+        transition: color 0.3s ease;
+      }
+      .navbar .navbar-link-group .navbar-link:hover,
+      .navbar .navbar-link-group .navbar-link:active {
+        color: #b7b7b7;
+        text-decoration: none;
+      }
+      .navbar .navbar-link-group .navbar-link:first-child {
+        margin-right: 16px;
+      }
       .code-input {
         font-size: 87.5%;
         font-family: SFMono-Regular, Menlo,Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -24,8 +36,10 @@
         border: none;
         font-size: 14px;
         color: #818a91;
+        outline: none !important;
       }
-      .code-output-copy:hover, .code-output-copy:active {
+      .code-output-copy:hover,
+      .code-output-copy:active {
         background-color: #007bff;
         border-radius: 4px;
         color: #ffffff;
@@ -42,7 +56,11 @@
 
   <body>
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Flow Types Remover</a>
+      <a class="navbar-brand" href="/remove-flow-types/">Flow Types Remover</a>
+      <div class="navbar-link-group my-2 my-lg-0">
+        <a class="navbar-link" href="https://github.com/d7my11/remove-flow-types/fork">Fork</ac>
+        <a class="navbar-link" href="https://github.com/d7my11/remove-flow-types">Github</a>
+      </div>
     </nav>
     <div class="container">
       <div class="form-group mt-3">
