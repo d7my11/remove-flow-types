@@ -1,3 +1,5 @@
+![](https://github.com/d7my11/remove-flow-types/workflows/.github/workflows/main.yml/badge.svg)
+
 # remove-flow-types
 **Simple tool to remove all flow types from pasted code.**
 
