@@ -2,8 +2,7 @@ const methodArgumentHandler = (match) =>
   match.split(',').map((arg) => arg.replace(/:.+/g, '')).join(',')
 
 const rules = [
-  { matcher: /(?<=\()([A-Za-z]*(?:\s)?:(?:\s)?[A-Za-z<>]*.*?)(?=\))/g, handler: methodArgumentHandler },
-  { matcher: /(?<=\()(\n+)?(\s+)([A-Za-z\s\n]*(?:\s)?:(?:\s)?[A-Za-z<>,]*.*?)+(\n+)(?=\))/g, handler: methodArgumentHandler },
+  { matcher: /(?<=\()(\n+)?(\s+)?([A-Za-z\s\n]*(?:\s)?:(?:\s)?[A-Za-z<>,]*.*?)+(\n+)?(?=\))/g, handler: methodArgumentHandler },
   { matcher: /(:[A-Za-z<>*,\s{}]*?)(?=(\s\=))/g }
 ]
 
