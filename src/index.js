@@ -29,6 +29,9 @@ copyButtonElm.addEventListener('click', () => {
 })
 convertButtonElm.addEventListener('click', (e) => {
   const pastedCode = codeTextAreaElm.value
-  resultContainerElm.style.display = 'block'
-  resultElm.innerHTML = typeRemover(pastedCode)
+
+  if (codeTextAreaElm.value.length) {
+    resultContainerElm.style.display = 'block'
+    resultElm.innerHTML = typeRemover(pastedCode)
+  }
 })
