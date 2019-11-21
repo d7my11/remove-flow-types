@@ -8,7 +8,7 @@ describe('typeRemover', () => {
 
     expect(actual).toEqual(expected)
   })
-  
+
   it('removes types from variable declaration', () => {
     const input = 'const Pagination: StyledComponent<{}, *, *> = styled.div`' +
       'width: 9px;' +
@@ -23,11 +23,11 @@ describe('typeRemover', () => {
       'height: 9px;' +
       'border-radius: 100%;' +
       'margin-right: 10px;' +
-      'cursor: pointer;`' 
+      'cursor: pointer;`'
 
     expect(actual).toEqual(expected)
   })
-  
+
   it('removes types from method return type', () => {
     const input = 'export const onlyProps = (list: Array<string>, props: Object): Object => isEmpty(list) ? {} : pickByKeys(list, props)'
     const actual = typeRemover(input)
@@ -35,7 +35,7 @@ describe('typeRemover', () => {
 
     expect(actual).toEqual(expected)
   })
-  
+
   it('removes types from methods inside styled-components', () => {
     const input = 'export const ModalTitle: StyledComponent<ModalTitleProps, *, *> = styled.h2`' +
       'text-align: center;' +

@@ -1,3 +1,7 @@
+# extensions
+*.js.map
+
+# directories
 node_modules
 coverage
 dist
