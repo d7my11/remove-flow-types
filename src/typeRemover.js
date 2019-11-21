@@ -1,7 +1,5 @@
-const methodArgumentHandler = (match) => {
-  console.log({match})
-  return match.split(',').map((arg) => arg.replace(/:.+/g, '')).join(',')
-}
+const methodArgumentHandler = (match) =>
+  match.split(',').map((arg) => arg.replace(/:.+/g, '')).join(',')
 
 const rules = [
   { matcher: /(?<=\()([A-Za-z]*(?:\s)?:(?:\s)?[A-Za-z<>]*.*?)(?=\))/g, handler: methodArgumentHandler },
